@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="nb">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Verkstedregister</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <a href="#innhold">Hopp til hovedinnhold</a>
+    <nav aria-label="Hovedmeny">
+        <a href="{{ url_for('kunder') }}">Kundeliste</a>
+    </nav>
+    <main id="innhold" tabindex="-1">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
